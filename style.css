@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* TÍTULOS CENTRALIZADOS */
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header {
+  background-color: #e10600;
+  padding: 20px;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+.historia, .galeria, .pilotos, .temporada, .preferencias {
+  margin-bottom: 40px;
+}
+
+/* GALERIA */
+.galeria .imagens {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* CARDS DOS PILOTOS */
+.cards-pilotos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.piloto-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 16px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.piloto-card:hover {
+  transform: scale(1.05);
+}
+
+.piloto-card h3 {
+  margin-bottom: 10px;
+  color: #FFD700;
+}
+
+.piloto-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.piloto-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* TEMPORADA */
+.temporada {
+  background: #1f1f1f;
+  padding: 45px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* CHECKBOXES */
+.preferencias {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.preferencias h2 {
+  color: #e10600;
+  margin-bottom: 10px;
+}
+
+.preferencias label {
+  display: block;
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.preferencias input[type="checkbox"] {
+  accent-color: #e10600;
+  margin-right: 8px;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: #1f1f1f;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #e10600;
+  text-decoration: none;
+}
